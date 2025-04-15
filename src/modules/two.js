@@ -1,5 +1,5 @@
 const moduleTwo = () => {
-    console.log('Module 2')
+    console.log('Module two')
 }
 
 export default moduleTwo
