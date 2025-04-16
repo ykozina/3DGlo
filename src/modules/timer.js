@@ -1,6 +1,4 @@
 const timer = (deadline) => {
-    console.log(deadline)
-
     let count = 0;
 
     const timerHours = document.getElementById('timer-hours')
