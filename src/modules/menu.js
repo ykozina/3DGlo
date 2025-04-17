@@ -7,6 +7,7 @@ const menu = () => {
     const menu = document.querySelector('menu');
     const closeBtn = menu.querySelector('.close-btn');
     const menuItems = menu.querySelectorAll('ul>li>a');
+    const bodySections = document.querySelectorAll('body > div:has(.container)')
 
     smoothScroll.style.scrollBehavior = "smooth";
 
@@ -17,7 +18,16 @@ const menu = () => {
     menuBtn.addEventListener('click', handleMenu)
     closeBtn.addEventListener('click', handleMenu)
 
-    menuItems.forEach(menuItem => menuItem.addEventListener('click', handleMenu))
+    menuItems.forEach(menuItem => {
+        menuItem.addEventListener('click', (link) => {
+            link.preventDefault();
+            const anchor = menuItem.getAttribute('href');
+
+            document.querySelector(`${anchor}`).scrollIntoView({ behavior: "smooth" })
+            handleMenu()
+        })
+    })
+
 
 }
 
