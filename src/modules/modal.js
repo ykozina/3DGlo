@@ -18,7 +18,6 @@ const modal = () => {
         btn.addEventListener('click', () => {
             modal.style.display = "block"
             modal.getBoundingClientRect().top + 50
-            // console.log()
             modalPopup.style.top = "50px"
         })
     })
