@@ -1,6 +1,6 @@
 'use strict'
 
-const slider = (sliderWrapper, slide, activeSlide = 'slide-active', dotsWrapper, dot, activeDot = activeDot) => {
+const slider = (sliderWrapper, slide, dotsWrapper, dot, activeSlide = 'slide-active', activeDot = 'active-dot') => {
 
     const sliderBlock = document.querySelector(sliderWrapper);
     const slides = document.querySelectorAll(slide);
