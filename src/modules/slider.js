@@ -16,7 +16,7 @@ const slider = (sliderWrapper, slide, dotsWrapper, dot, activeSlide = 'slide-act
     }
 
     const addDots = () => {
-        for (let i = 0; i <= slides.length; i++) {
+        for (let i = 0; i < slides.length; i++) {
             const newDot = document.createElement('li');
             if (i === 0) {
                 newDot.classList.add(dot, activeDot);
