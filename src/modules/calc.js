@@ -35,9 +35,6 @@ const calc = (price = 100) => {
             totalValue = 0
         }
 
-        //total.textContent = totalValue
-        //animateNumbers(totalValue)
-
         animate({
             duration: 500,
             timing(timeFraction) {
@@ -57,24 +54,6 @@ const calc = (price = 100) => {
             countCalc()
         }
     })
-
-    // const animateNumbers = (sum) => {
-
-    //     if (rollingDigits) {
-    //         clearInterval(rollingDigits);
-    //     }
-
-    //     let counter = 0;
-
-    //     rollingDigits = setInterval(() => {
-    //         if (counter <= sum) {
-    //             total.textContent = counter;
-    //             counter += 100;
-    //         } else {
-    //             clearInterval(rollingDigits);
-    //         }
-    //     }, 30);
-    // }
 
 }
 
