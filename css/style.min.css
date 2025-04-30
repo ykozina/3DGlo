@@ -208,6 +208,10 @@ body .form-btn {
     margin-top: 20px
 }
 
+#form3 div {
+    color: #FFFFFF;
+}
+
 body .btn.focus,
 body .btn:focus,
 body .btn:hover {
